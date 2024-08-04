@@ -1,5 +1,5 @@
 # great-basketball-app
-historia de usuario:
+histórias de usuário:
 
 1- eu, como um jogador profissional de basquete do time a, preciso de um site que me forneça as informações dos próximos jogos e resumos dos jogos antigos. além disso, preciso conseguir realizar meu cadastro com cpf, numero de celular, email e nome completo.
 
