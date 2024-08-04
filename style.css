@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/*importar uma fonte (poppins) do serviço Google Fonts*/
+/*os números indicam a espessura da fonte*/
+/*display=swap: faz o navegador utilizar uma fonte visível até que tudo seja carregado */
+
+*/*seletor universal: tudo que está abaixo é aplicado em todos os elementos da página*/{
+    margin: 0; /*remover a margem padrão pra eu aplicar minha própria margem*/
+    padding: 0; /*remove o padding (espaço interno entre o conteúdo e a borda)*/
+    box-sizing: border-box; /*border: linha em volta da borda da caixa.
+    ao definir o tam da caixa com border-box, eu incluo dento do valor total, o espaçamento entre os itens da caixa e a margem.
+    se eu definisse com content-box, o tamanho da caixa não contaria com padding e margin, portanto ela ficaria maior do que o valor que estabeleci*/
+    font-family: "Poppins", sans-serif; /*define poppins como a fonte padrão de todos os elementos.
+    se ela não estiver disponível, o navegador usa a fonte sans-serif*/
+}
+
+body{
+    display: flex;/*alinhamento flexível: permite controle do posicionamento e alinhamento dos itens filhos*/
+    justify-content: center;/*alinhamento horizontal dos itens dento da caixa = direita, esquerda ou meio*/
+    align-items: center;/*alinhamento vertical dos itens dento da caixa = cima, baixo, meio*/
+    min-height: 100vh;/*vh:viewport height-> janela de vizualizção
+    garante que a altura mínima do corpo do site seja equivalente ao total da janela de vizu*/
+    background: seagreen; /*cor fundo*/
+}
+
+/*estilizando os elementos da classse wrapper: caixa de login*/
+.wrapper{ 
+    width: 420px; /*largura da caixa*/
+    background: purple; /*cor do fundo da caixa*/
+    color: white;/*cor das escritas e dos bonequinhos*/
+}
+
+/*estilizando o login: h1*/
+.wrapper h1{
+    font-size: 36px; /*tam da fonte*/
+    text-align: center; /*Login fica no centro da caixa*/
+}
+
+/*estilizando dentro da caixa*/
+.wrapper .input-box{
+    width: 100%;/*comprimento*/
+    height: 50px; /*largura da parte salmão*/
+    background: salmon;
+    margin: 30px 0; /*dist entre a parte do nome e a senha*/
+}
+
+/*estilizando os inputs dentro da classe input: nome e senha*/
+.input-box input{ 
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}

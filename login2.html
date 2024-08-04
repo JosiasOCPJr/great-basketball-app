@@ -1,0 +1,56 @@
+
+<!--utilizei o boxicons para estilizar!!!-->
+<!--video referência:https://www.youtube.com/watch?v=hlwlM4a5rxg -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de login 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--boxxicons-->
+</head>
+<body> 
+    <div class="wrapper"> 
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nome"
+                required> <!--placeholder: campo no qual o usuário vai digitar em cima-->
+                <i class='bx bxs-user'></i> <!--boxicons: bonequinho do lado do nome-->
+            </div>
+           <!-- USAR NA PARTE DE REGISTRO
+            <div class="input-box">
+                <input type="text" placeholder="cpf"
+                required> 
+                <i class='bx bxs-file-doc'></i> <!--boxicons
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email"
+                required> 
+                <i class='bx bxs-envelope'></i> <!--boxicons
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Número de telefone"
+                required> 
+                <i class='bx bxs-phone'></i> <!--boxicons
+            </div>-->
+            <div class="input-box">
+                <input type="password" placeholder="Senha" 
+                required> 
+                <i class='bx bxs-lock-alt'></i> <!--boxicons-->
+            </div>  
+            <div class="remember-forgot">
+                <label> <input type="checkbox">lembrar de mim</label> <!--label:define um rotulo para um formulario, nesse caso é a caixa de seleção-->
+                <a href="#">esqueceu a senha?</a> <!-- href = #: indica que o link não leva a lugar nenhum. trocar o # por um url depois-->
+            </div>
+
+            <button type="submit" class="btn">Entrar</button> <!--class= btn é usada para estilizar um botão-->
+        
+            <div class="register-link"></div>
+            <p>Não tem uma conta? 
+                <a href="#">Registrar</a></p> <!--MUDAR A # POR UMA URL DEPOIS-->
+        </form>
+    </div>
+</body>
+</html>
