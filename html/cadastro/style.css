@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*/*seletor universal: tudo que está abaixo é aplicado em todos os elementos da página*/{
+    margin: 0; /*remover a margem padrão pra eu aplicar minha própria margem*/
+    padding: 0; /*remove o padding (espaço interno entre o conteúdo e a borda)*/
+    box-sizing: border-box; /*border: linha em volta da borda da caixa.
+    ao definir o tam da caixa com border-box, eu incluo dento do valor total, o espaçamento entre os itens da caixa e a margem.
+    se eu definisse com content-box, o tamanho da caixa não contaria com padding e margin, portanto ela ficaria maior do que o valor que estabeleci*/
+    font-family: "Poppins", sans-serif; /*define poppins como a fonte padrão de todos os elementos.
+    se ela não estiver disponível, o navegador usa a fonte sans-serif*/
+}
+
+body{
+    display: flex;/*alinhamento flexível: permite controle do posicionamento e alinhamento dos itens filhos*/
+    justify-content: center;/*alinhamento horizontal dos itens dento da caixa = direita, esquerda ou meio*/
+    align-items: center;/*alinhamento vertical dos itens dento da caixa = cima, baixo, meio*/
+    min-height: 100vh;/*vh:viewport height-> janela de vizualizção
+    garante que a altura mínima do corpo do site seja equivalente ao total da janela de vizu*/    
+    background: url('../../assets/fundo.jpg') no-repeat; /*cor fundo*/
+    background-size: cover;
+    background-position: center;
+}
+
