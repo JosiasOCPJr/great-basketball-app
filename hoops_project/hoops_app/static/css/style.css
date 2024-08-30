@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/*importar uma fonte (poppins) do serviço Google Fonts*/
+/*os números indicam a espessura da fonte*/
+/*display=swap: faz o navegador utilizar uma fonte visível até que tudo seja carregado */
+
+*/*seletor universal: tudo que está abaixo é aplicado em todos os elementos da página*/{
+    margin: 0; /*remover a margem padrão pra eu aplicar minha própria margem*/
+    padding: 0; /*remove o padding (espaço interno entre o conteúdo e a borda)*/
+    box-sizing: border-box; /*border: linha em volta da borda da caixa.
+    ao definir o tam da caixa com border-box, eu incluo dento do valor total, o espaçamento entre os itens da caixa e a margem.
+    se eu definisse com content-box, o tamanho da caixa não contaria com padding e margin, portanto ela ficaria maior do que o valor que estabeleci*/
+    font-family: "Poppins", sans-serif; /*define poppins como a fonte padrão de todos os elementos.
+    se ela não estiver disponível, o navegador usa a fonte sans-serif*/
+}
+
+body{
+    display: flex;/*alinhamento flexível: permite controle do posicionamento e alinhamento dos itens filhos*/
+    justify-content: center;/*alinhamento horizontal dos itens dento da caixa = direita, esquerda ou meio*/
+    align-items: center;/*alinhamento vertical dos itens dento da caixa = cima, baixo, meio*/
+    min-height: 100vh;/*vh:viewport height-> janela de vizualizção
+    garante que a altura mínima do corpo do site seja equivalente ao total da janela de vizu*/    
+    background: url('../images/fundo.jpg') no-repeat; /*cor fundo*/
+    background-size: cover;
+    background-position: center;
+}
+
+/*estilizando os elementos da classse wrapper: caixa de login*/
+.wrapper{ 
+    width: 700px; /*largura da caixa*/
+    background: transparent; /*cor do fundo da caixa*/
+    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10xp rgba(0, 0, 0, .1);
+    color: white;/*cor das escritas e dos bonequinhos*/
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+/*estilizando o login: h1*/
+.wrapper h1{
+    font-size: 36px; /*tam da fonte*/
+    text-align: center; /*Login fica no centro da caixa*/
+}
+
+/*estilizando dentro da caixa*/
+.wrapper .input-box{
+    width: 100%;/*comprimento*/
+    height: 50px; /*largura da parte salmão*/
+    /*background: salmon; /*usei só para ter uma linha de referência*/
+    margin: 30px 0; /*dist entre a parte do nome e a senha*/
+    position: relative; /* caixa com posicionamento relativo para
+    facilitar a centralização dos ícones, que têm posicionamento absoluto (input-box i)*/
+}
+
+/*estilizando os inputs dentro da classe input:caixas dos nome e senha*/
+.input-box input{ 
+    width: 100%; /*tamanho/comprimento dos inputs*/
+    height: 100%; /*altura/largura dos inputs*/
+    background: transparent; /*torna o fundo dos inputs transparente*/
+    border: none; /*tira a borda padrão que o navegador aplica*/
+    outline: none; /*tira o contorno padrão qunado clica em cima da caixa*/
+    border: 2px solid rgba(255, 255, 255, .2); /*add borda quase transparente*/
+    border-radius: 40px; /*arredonda as bordas dos inputs*/
+    padding-left: 20px; /*afastando os placeholders da borda do input*/
+
+    /*estilizando o que eu for escrever dentro dos inputs (meu nome e minha senha)*/
+    font-size: 16px; 
+    color: white;
+    padding: 20px, 45px, 20px, 20px; /*espaço interno entre palavra e borda*/
+}
+
+/*estilizando os placeholders dentro da classe: nome e senha*/
+.input-box input::placeholder{
+    color: white;
+}
+
+/*estilizando os ícones pegos do boxicons*/
+.input-box i {
+    position:absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+/*lembrar de mim e esqueceu a senha?*/
+.wrapper .remember-forgot{
+    display: flex; /*controle de alinhamento e posicionamento*/
+    justify-content: space-between;/*alinhamento horizontal dentro do input*/
+    /*space between: dois itens nas extremidades e, se houver um terceiro, ao centro*/ 
+    font-size: 14.5px;
+    margin: -15px 0 15px; /*-15px: puxa o elemento para cima
+    0: margem orizontal (sem espaçamento lateral)
+    15px: margem inferior*/   
+}
+
+/*lembrar de mim*/
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+/*esqueceu a senha?*/
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{ /*funciona quando o usuário coloca o cursor
+    do mouse sob o elemento*/
+    text-decoration: underline;
+}
+
+/*botão de entrar*/
+.wrapper .btn{
+    width: 100%; /*comprimento input*/
+    height: 45px; /*largura input*/
+    background: white;
+    border: none;
+    outline: none; /*tira contorno padrão*/
+    border-radius: 40px; /*arredonda as bordas*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1); /*sombreia o botão*/
+    cursor: pointer; /*altera o cursor do mouse para uma mãozinha*/
+    font-size: 16px;
+    color: #333;
+    font-weight: 600; /*chama a fonte immportada no inicio do codigo*/
+}
+
+/*Não tem uma conta?*/
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+/*Criar conta*/
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
